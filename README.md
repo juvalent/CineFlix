@@ -15,6 +15,7 @@ Aplicação web simples e responsiva para busca de filmes, consumindo uma API p�
 ## 🚀 Funcionalidades
 
 - 🔎 Busca de filmes por nome
+- 🔎 Busca de filmes por voz (recurso de Hardware)
 - 🎞️ Exibição de pôster e título
 - 📱 Layout responsivo (mobile-first)
 - ⚡ Consumo de API em tempo real
@@ -35,8 +36,10 @@ Aplicação web simples e responsiva para busca de filmes, consumindo uma API p�
 CineFlix/
 │
 ├── index.html
+├── manifest.json
 ├── style.css
 ├── script.js
+├── service-worker.js
 └── print.png
 
 
@@ -44,7 +47,7 @@ CineFlix/
 
 ## 🎯 Objetivo
 
-Este projeto foi desenvolvido como desafio prático da aula de coding mobile para consolidar conhecimentos em consumo de APIs, manipulação de DOM e desenvolvimento de interfaces responsivas.
+Este projeto foi desenvolvido como desafio prático da aula de coding mobile para consolidar conhecimentos em consumo de APIs, manipulação de DOM e desenvolvimento de interfaces responsivas e recurso de Hardware.
 
 ---
 
@@ -52,5 +55,6 @@ Este projeto foi desenvolvido como desafio prático da aula de coding mobile par
 
 - Integração com APIs externas  
 - Manipulação dinâmica de elementos HTML  
-- Responsividade com CSS  
+- Responsividade com CSS
+   
 
