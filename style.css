@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 130px;
+
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+  url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba") no-repeat center center/cover;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  color: #e50914;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* SEARCH BOX */
+.search-box {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 8px rgba(229,9,20,0.7);
+}
+
+.search-box button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #e50914;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.search-box button:hover {
+  background: #b20710;
+  transform: scale(1.05);
+}
+
+#filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+
+.card {
+  background: #1c1c1c;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: aparecer 0.5s ease forwards;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#filmes p {
+  grid-column: 1 / -1;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+  body {
+    padding-top: 150px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 90%;
+  }
+
+  #filmes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CineFlix</title>
+  <meta name="description" content="Busque filmes rapidamente com o CineFlix">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <h2>🎬 CineFlix</h2>
+
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="search" 
+        placeholder="Buscar filme..." 
+        aria-label="Buscar filme"
+      >
+
+      <button onclick="buscarFilme()">🔍</button>
+      <button onclick="usarMicrofone()">🎤</button>
+    </div>
+  </header>
+
+  <div id="filmes"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
