@@ -2,7 +2,7 @@
 
 Aplicação web simples e responsiva para busca de filmes, consumindo uma API pública e exibindo resultados em tempo real.
 
-🔗 **Acesse o projeto:** https://juvalent.github.io/CineFlix/
+🔗 **Acesse o projeto:**[ https://juvalent.github.io/CineFlix/](https://cine-flix-two-gray.vercel.app/)
 
 ---
 
